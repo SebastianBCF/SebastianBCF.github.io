@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sebastián Campos · Desarrollador full stack</title>
+  <meta name="description" content="Sebastián Campos Fernández, desarrollador full stack junior en Granada. Técnico Superior en DAM y terminando DAW. PHP, Laravel y JavaScript.">
+  <meta property="og:title" content="Sebastián Campos · Desarrollador full stack">
+  <meta property="og:description" content="Desarrollador full stack junior en Granada. PHP, Laravel y JavaScript. Disponible para prácticas FCT de DAW.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Aplica el tema guardado antes de pintar para evitar el parpadeo
+    try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- Patrón nazarí de fondo -->
+  <svg class="pattern" aria-hidden="true">
+    <defs>
+      <pattern id="estrella" width="88" height="88" patternUnits="userSpaceOnUse">
+        <g fill="none" stroke="currentColor" stroke-width="1">
+          <rect x="26" y="26" width="36" height="36"/>
+          <rect x="26" y="26" width="36" height="36" transform="rotate(45 44 44)"/>
+          <path d="M44 18.5V0M44 69.5V88M18.5 44H0M69.5 44H88"/>
+          <circle cx="44" cy="44" r="7"/>
+          <path d="M0 0l12 12M88 0L76 12M0 88l12-12M88 88L76 76"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#estrella)"/>
+  </svg>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <div class="layout">
+    <!-- Columna fija -->
+    <header class="side">
+      <div class="side-top">
+        <button class="logo" id="logo" aria-label="Girar la estrella">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke-width="3.5" stroke-linejoin="round"><rect class="sq1" x="18" y="18" width="28" height="28"/><rect class="sq2" x="18" y="18" width="28" height="28" transform="rotate(45 32 32)"/></g><circle cx="32" cy="32" r="4"/></svg>
+        </button>
+
+        <p class="hello mono">Hola, soy</p>
+        <h1 class="name">Sebastián<br><span>Campos</span></h1>
+        <p class="role">Desarrollador full stack junior</p>
+        <p class="tagline">Hago aplicaciones web completas: del frontend con <strong>JavaScript</strong> al backend con <strong>PHP y Laravel</strong>, pasando por la base de datos.</p>
+
+        <p class="status"><span class="dot"></span> Disponible para prácticas FCT de DAW</p>
+
+        <nav class="nav" aria-label="Secciones">
+          <ul>
+            <li><a href="#sobre-mi"><span class="line"></span>Sobre mí</a></li>
+            <li><a href="#experiencia"><span class="line"></span>Experiencia</a></li>
+            <li><a href="#proyectos"><span class="line"></span>Proyectos</a></li>
+            <li><a href="#stack"><span class="line"></span>Stack</a></li>
+            <li><a href="#contacto"><span class="line"></span>Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="side-bottom">
+        <a class="btn btn-primary" href="CV_Sebastian_Campos.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          Descargar CV
+        </a>
+        <div class="socials">
+          <a href="https://github.com/SebastianBCF" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 015.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0023.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sebastian-campos-fernandez-39051933a" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 110-4.2 2.1 2.1 0 010 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+          </a>
+          <a href="mailto:secafer06@gmail.com" aria-label="Correo electrónico">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+          </a>
+          <button class="theme" id="theme" aria-label="Cambiar entre modo claro y oscuro">
+            <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4l1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido -->
+    <main id="contenido" class="content">
+
+      <section id="sobre-mi" class="section" aria-label="Sobre mí">
+        <h2 class="sec-title"><span class="mono">01.</span> Sobre mí</h2>
+        <div class="about">
+          <p>Soy de <strong>Atarfe, Granada</strong>, y me gusta construir aplicaciones web de principio a fin. Soy <strong>Técnico Superior en DAM</strong> y estoy terminando <strong>DAW</strong> en el Instituto FOC: solo me quedan las prácticas.</p>
+          <p>He trabajado en una agencia haciendo webs para <strong>clientes reales en producción</strong>: maquetación responsive, animaciones con JavaScript (incluida una en 3D), tiendas online y SEO. Mi proyecto más grande es <strong>Zampa</strong>, un SaaS para restaurantes hecho en equipo con Laravel 12, donde llevé sobre todo el frontend.</p>
+          <p>Busco un equipo donde seguir aprendiendo y aportar desde el primer día. Me tomo en serio los detalles: la accesibilidad, el código limpio y que las cosas se vean bien en cualquier pantalla.</p>
+        </div>
+
+        <div class="terminal" aria-label="Datos rápidos">
+          <div class="term-bar"><span></span><span></span><span></span><p class="mono">ficha-rapida.txt</p></div>
+          <pre class="mono" id="term"><span class="p">$</span> cat ficha-rapida.txt
+<span class="k">nombre</span>     Sebastián Campos Fernández
+<span class="k">títulos</span>    DAM ✓ · DAW (pendiente FCT)
+<span class="k">perfil</span>     Full stack · PHP · Laravel · JS · MySQL
+<span class="k">idiomas</span>    Español nativo · Inglés B2
+<span class="k">extra</span>      Carnet B · Incorporación inmediata
+<span class="p">$</span> <span class="cursor">▍</span></pre>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section" aria-label="Experiencia y formación">
+        <h2 class="sec-title"><span class="mono">02.</span> Experiencia</h2>
+        <ol class="timeline">
+          <li class="card">
+            <p class="date mono">Mar — May 2026</p>
+            <div>
+              <h3>Desarrollador web · Prácticas FCT <span class="at">· Wunjo Marketing</span></h3>
+              <ul class="bullets">
+                <li>Webs con HTML5, CSS3 y JavaScript para clientes reales en producción.</li>
+                <li>Maquetación responsive para móvil, tablet y escritorio.</li>
+                <li>Animaciones e interactividad con JavaScript, incluida animación 3D.</li>
+                <li>Menús de navegación complejos y páginas de producto para tiendas online.</li>
+                <li>Optimización de contenido para SEO con clientes activos.</li>
+              </ul>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>SEO</li></ul>
+            </div>
+          </li>
+          <li class="card">
+            <p class="date mono">2024 — 2026</p>
+            <div>
+              <h3>CFGS Desarrollo de Aplicaciones Multiplataforma <span class="at">· Instituto FOC</span></h3>
+              <p>Titulado. Programación en Java, bases de datos relacionales y NoSQL, interfaces y aplicaciones multiplataforma.</p>
+              <ul class="tags"><li>Java</li><li>SQL</li><li>MongoDB</li></ul>
+            </div>
+          </li>
+          <li class="card">
+            <p class="date mono">En curso</p>
+            <div>
+              <h3>CFGS Desarrollo de Aplicaciones Web <span class="at">· Instituto FOC</span></h3>
+              <p>Desarrollo en entorno cliente y servidor, despliegue y diseño de interfaces. Solo me faltan las prácticas FCT para titularme.</p>
+              <ul class="tags"><li>PHP</li><li>JavaScript</li><li>Docker</li></ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="proyectos" class="section" aria-label="Proyectos">
+        <h2 class="sec-title"><span class="mono">03.</span> Proyectos</h2>
+
+        <article class="card featured">
+          <div class="featured-text">
+            <p class="kicker mono">Proyecto destacado · 2026</p>
+            <h3>Zampa</h3>
+            <p class="lead">SaaS para bares y restaurantes, hecho en un equipo de 3 desarrolladores.</p>
+            <ul class="bullets">
+              <li>Carta digital pública con acceso por <strong>QR</strong>, filtros de alérgenos y carrito de pedidos.</li>
+              <li><strong>Panel de cocina en tiempo real</strong> y chatbot con IA (OpenAI) que conoce la carta.</li>
+              <li>Interfaz accesible <strong>WCAG 2.1 AA</strong> con componentes Blade y Tailwind.</li>
+              <li>Ramas por funcionalidad, Pull Requests y tests con Pest PHP: <strong>más de 400 commits</strong> míos.</li>
+            </ul>
+            <ul class="tags"><li>Laravel 12</li><li>Blade</li><li>Tailwind CSS</li><li>OpenAI</li><li>Pest PHP</li></ul>
+            <a class="link-arrow" href="https://github.com/BENJAMINDTS/Zampa" target="_blank" rel="noopener">Ver el código en GitHub <span aria-hidden="true">→</span></a>
+          </div>
+
+          <!-- Maqueta de la carta digital -->
+          <div class="phone" aria-hidden="true">
+            <div class="phone-screen">
+              <div class="ph-head"><b>Zampa</b><span>Mesa 4</span></div>
+              <div class="ph-chips"><span class="on">Tapas</span><span>Raciones</span><span>Postres</span></div>
+              <div class="ph-item"><div class="ph-img a"></div><div><b>Croquetas caseras</b><small>🥛 🌾</small></div><em>6,50 €</em></div>
+              <div class="ph-item"><div class="ph-img b"></div><div><b>Berenjenas con miel</b><small>🌾</small></div><em>7,00 €</em></div>
+              <div class="ph-item"><div class="ph-img c"></div><div><b>Remojón granadino</b><small>🐟</small></div><em>5,50 €</em></div>
+              <div class="ph-cart">Ver pedido · 3 <span>19,00 €</span></div>
+            </div>
+            <div class="qr"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </article>
+
+        <div class="grid">
+          <article class="card small">
+            <div class="small-top">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg>
+              <span class="mono private">repo privado</span>
+            </div>
+            <h3>Bongo</h3>
+            <p>Plataforma de tareas y actividades personalizable con Laravel 12. Puedo enseñarla en una entrevista.</p>
+            <ul class="tags"><li>Laravel 12</li><li>Blade</li><li>PHP</li></ul>
+          </article>
+
+          <a class="card small" href="https://github.com/SebastianBCF/FP_SUPERIOR_DAM-DAW" target="_blank" rel="noopener">
+            <div class="small-top">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>
+              <span class="ext" aria-hidden="true">↗</span>
+            </div>
+            <h3>Ejercicios DAW / DAM</h3>
+            <p>Las prácticas de los dos ciclos en el Instituto FOC: HTML, CSS, JavaScript, PHP, SQL, XML y Python.</p>
+            <ul class="tags"><li>JavaScript</li><li>PHP</li><li>SQL</li><li>Python</li></ul>
+          </a>
+
+          <a class="card small" href="https://github.com/SebastianBCF/sebastian-portfolio" target="_blank" rel="noopener">
+            <div class="small-top">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg>
+              <span class="ext" aria-hidden="true">↗</span>
+            </div>
+            <h3>Este portfolio, en Laravel</h3>
+            <p>La misma web hecha con Laravel 12, Blade y Tailwind CSS 4. Los datos salen del controlador, no de las vistas.</p>
+            <ul class="tags"><li>Laravel 12</li><li>Tailwind 4</li><li>Vite</li></ul>
+          </a>
+        </div>
+      </section>
+
+      <section id="stack" class="section" aria-label="Stack técnico">
+        <h2 class="sec-title"><span class="mono">04.</span> Stack</h2>
+        <div class="stack">
+          <div class="stack-group">
+            <h3 class="mono">Frontend</h3>
+            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Tailwind CSS</li><li>Sass</li><li>jQuery</li><li>AJAX</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="mono">Backend</h3>
+            <ul class="chips"><li class="hot">PHP</li><li class="hot">Laravel</li><li>Blade</li><li>Symfony</li><li>Java</li><li>Node.js</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="mono">Datos</h3>
+            <ul class="chips"><li>MySQL</li><li>SQL</li><li>PL/SQL</li><li>MongoDB</li><li>JSON</li><li>XML</li></ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="mono">Herramientas</h3>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>Docker</li><li>Linux</li><li>Apache</li><li>Pest PHP</li><li>VS Code</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section contact" aria-label="Contacto">
+        <h2 class="sec-title"><span class="mono">05.</span> Contacto</h2>
+        <p class="big">¿Tienes un hueco para prácticas o un puesto junior?</p>
+        <p>Estoy buscando empresa para la FCT de DAW en Granada y alrededores, y me incorporo ya. Escríbeme y te contesto rápido.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:secafer06@gmail.com?subject=Hola%20Sebasti%C3%A1n">Escríbeme</a>
+          <button class="btn btn-ghost" id="copy" data-email="secafer06@gmail.com">
+            <span class="mono">secafer06@gmail.com</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>
+          </button>
+        </div>
+        <p class="copied mono" id="copied" role="status" aria-live="polite"></p>
+      </section>
+
+      <footer class="footer">
+        <p>Diseñado y programado por mí en Atarfe, Granada. HTML, CSS y JavaScript a pelo. El patrón del fondo está inspirado en los alicatados de la Alhambra.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
